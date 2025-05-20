@@ -12,11 +12,17 @@ class EMI(object):
         self.total_amount = total_amount
         self.no_of_installments = no_of_installments
         self.monthly_installment = self.calculateMonthlyInstallment()
-        self.emi_list = [0] + [self.monthly_installment] * no_of_installments
+        self.emi_list0 = [0] + [self.monthly_installment] * (no_of_installments - 1)
+        self.emi_list = self.emi_list0 + [self.getLastBill()]
         self.no_of_installments_left = no_of_installments
 
         # self.lump_sum_amount = self.getLumpSumAmount()
         # self.emi_no = None
+
+    def getLastBill(self):
+        last_balance = self.total_amount - sum(self.emi_list0) 
+        return int(last_balance)
+        
 
     def setTotalAmount(self, total_amount):
         self.total_amount = total_amount

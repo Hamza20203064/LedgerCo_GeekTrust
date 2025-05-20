@@ -1,8 +1,7 @@
 # Drive
 import unittest
 import sys
-sys.path.append(
-    'C:\\hamzaPrograming\\LLD\\LedgerCo_GeekTrust\\python-pip-starter-kit\\')
+sys.path.append('C:\\hamzaPrograming\\LLD\\LedgerCo_GeekTrust\\python-pip-starter-kit\\')
 from src.main import Main
 
 
@@ -19,8 +18,7 @@ class PaymentBalanceLoanTest(unittest.TestCase):
         inputFile = open('tests/resources/input/input1.txt', 'r')
         readInput = inputFile.readlines()
         inputFile.close()
-        outputFile = open(
-            'tests/resources/output/output1.txt', 'r')
+        outputFile = open('tests/resources/output/output1.txt', 'r')
         readOutputFile = outputFile.readlines()
         outputFile.close()
         expected_output = [line.split() for line in readOutputFile]
@@ -35,8 +33,7 @@ class PaymentBalanceLoanTest(unittest.TestCase):
         inputFile = open('tests/resources/input/input2.txt', 'r')
         readInput = inputFile.readlines()
         inputFile.close()
-        outputFile = open(
-            'tests/resources/output/output2.txt', 'r')
+        outputFile = open('tests/resources/output/output2.txt', 'r')
         readOutputFile = outputFile.readlines()
         outputFile.close()
         expected_output = [line.split() for line in readOutputFile]
@@ -50,8 +47,7 @@ class PaymentBalanceLoanTest(unittest.TestCase):
         inputFile = open('tests/resources/input/input4.txt', 'r')
         readInput = inputFile.readlines()
         inputFile.close()
-        outputFile = open(
-            'tests/resources/output/output4.txt', 'r')
+        outputFile = open('tests/resources/output/output4.txt', 'r')
         readOutputFile = outputFile.readlines()
         outputFile.close()
         expected_output = [line.split() for line in readOutputFile]
@@ -65,8 +61,7 @@ class PaymentBalanceLoanTest(unittest.TestCase):
         inputFile = open('tests/resources/input/input5.txt', 'r')
         readInput = inputFile.readlines()
         inputFile.close()
-        outputFile = open(
-            'tests/resources/output/output5.txt', 'r')
+        outputFile = open('tests/resources/output/output5.txt', 'r')
         readOutputFile = outputFile.readlines()
         outputFile.close()
         expected_output = [line.split() for line in readOutputFile]
